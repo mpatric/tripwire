@@ -1,7 +1,7 @@
 Tripwire
 ========
 
-Tripwire allows node.js applications to termiante execution of scripts that block the node.js event loop. For example, you can break out from infinite loops like `while(true)`. This functionality is useful if you are executing untrusted code within your node.js process. 
+Tripwire allows node.js applications to terminate execution of scripts that block the node.js event loop. For example, you can break out from infinite loops like `while(true)`. This functionality is useful if you are executing untrusted code within your node.js process. 
 
 Tripwire contains a native extension of node.js and currently supports Windows, Mac, and Linux. I do take contributions. 
 
@@ -11,7 +11,7 @@ Install with:
 npm install tripwire
 ```
 
-Then in your application, you can put a limit on the total amout of CPU time (kernel and user mode combined) the event loop is blocked before the execution of the script is terminated:
+Then in your application, you can put a limit on the total amount of CPU time (kernel and user mode combined) the event loop is blocked before the execution of the script is terminated:
 
 ```javascript
 var tripwire = require('tripwire');
